@@ -1,0 +1,46 @@
+// wp-content/themes/ej-stone-co/resources/src/styles/main.scss
+
+// ✅ SCSS `@use` (All SCSS modules must be at the top)
+@use "fonts";
+@use "reset" as *;
+@use "variables" as *;
+@use "breakpoints" as *;
+@use "mixins" as *;
+// @use "base";
+@use "buttons";
+
+@use "typography";
+
+@use "layout/header";
+@use "layout/footer";
+
+//
+@use "facets";
+@use "color_mode.scss";
+
+
+@use "fields_forms";
+@use "information-retrieval";
+
+// Woo
+@use "woocommerce/listings";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+
+// ✅ Tailwind Imports (MUST use `@import` since it's PostCSS, not SCSS)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+    body {
+        .product-listing-image {
+            @apply relative w-full overflow-hidden;
+        }
+        .product-listing-overlay {
+            @apply absolute bottom-0 left-0 w-full h-1/3 flex items-end justify-center overflow-hidden p-4 bg-gradient-to-t from-black/50 transition-opacity duration-300 group-hover:opacity-75;
+        }
+    }
+}

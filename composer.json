@@ -1,0 +1,17 @@
+{
+    "name": "ej-stone-co/wp-child-theme",
+    "description": "EJ Stone Co's chilld WordPress theme (based off of \"hello-elementor\")",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "EjStoneCo\\WpChildTheme\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ryan",
+            "email": "ryan.allan.dorn@gmail.com"
+        }
+    ],
+    "require": {}
+}

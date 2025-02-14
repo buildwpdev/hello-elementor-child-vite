@@ -1,0 +1,19 @@
+html body {
+    footer {
+
+
+        .site-logo-text {
+            * {
+                //@apply text-stone-900 !important;
+                text-transform:lowercase !important;
+                font-size:2rem;
+                font-family: "Funnel Sans", sans-serif;
+                word-spacing: -3px;
+                color:theme('colors.stone.400') !important;
+            }
+        }
+        
+
+
+    }
+}

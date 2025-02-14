@@ -1,0 +1,27 @@
+// wp-content/themes/ej-stone-co/resources/src/styles/_base.scss
+
+@use "variables" as *; // Import variables
+
+// Reset styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Global styles
+body {
+    font-family: $font-stack;
+    color: $text-color;
+    background-color: $background-color;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+}

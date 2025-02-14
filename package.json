@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4",
+    "vite": "^6.0.5",
+    "vite-plugin-webfont-dl": "^3.10.4"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "flowbite": "^3.1.1",
+    "laravel-vite-plugin": "^1.2.0"
+  }
+}

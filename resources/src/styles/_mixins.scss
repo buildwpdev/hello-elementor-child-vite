@@ -1,0 +1,37 @@
+// wp-content/themes/ej-stone-co/resources/src/styles/_mixins.scss
+
+@use "@/styles/variables" as *; // ✅ Uses alias instead of `../variables`
+@use "sass:color"; // ✅ Required for modern color functions
+
+// Button Styles
+@mixin button($bg-color: $primary-color, $text-color: white) {
+    display: inline-block;
+    padding: $padding;
+    color: $text-color;
+    background-color: $bg-color;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        background-color: color.adjust($bg-color, $lightness: -10%); // ✅ Modern Sass function
+    }
+}
+
+// Flexbox Centering
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Responsive Media Query Mixin
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: 600px) { @content; }
+    } @else if $breakpoint == tablet {
+        @media (max-width: 900px) { @content; }
+    }
+}

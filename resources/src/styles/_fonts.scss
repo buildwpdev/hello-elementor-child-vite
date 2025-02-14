@@ -1,0 +1,52 @@
+// // wp-content/themes/ej-stone-co/resources/src/styles/fonts/_fonts.scss
+
+// // ✅ Load Google Fonts in Development
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700&family=Manrope:wght@200..800&display=swap");
+
+
+
+// // ✅ Self-hosted fonts (used in production)
+// @font-face {
+//     font-family: "Funnel Sans";
+//     src: url("@/assets/fonts/FunnelSans-Regular.woff2") format("woff2"),
+//          url("@/assets/fonts/FunnelSans-Regular.woff") format("woff");
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Funnel Sans";
+//     src: url("@/assets/fonts/FunnelSans-Bold.woff2") format("woff2"),
+//          url("@/assets/fonts/FunnelSans-Bold.woff") format("woff");
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Fira Sans";
+//     src: url("@/assets/fonts/FiraSans-Regular.woff2") format("woff2"),
+//          url("@/assets/fonts/FiraSans-Regular.woff") format("woff");
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Fira Sans";
+//     src: url("@/assets/fonts/FiraSans-Bold.woff2") format("woff2"),
+//          url("@/assets/fonts/FiraSans-Bold.woff") format("woff");
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+//
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Funnel Sans", sans-serif;
+}

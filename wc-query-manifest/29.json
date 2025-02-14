@@ -1,0 +1,11 @@
+{
+    "conditions": [
+        [
+            {
+                "type": "attribute",
+                "slug": "pa_jewelry-piece-type",
+                "value": "bracelet"
+            }
+        ]
+    ]
+}

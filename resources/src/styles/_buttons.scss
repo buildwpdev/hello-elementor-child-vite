@@ -1,0 +1,38 @@
+// wp-content/themes/ej-stone-co/resources/src/styles/_buttons.scss
+
+@use "@/styles/variables" as *; 
+@use "@/styles/breakpoints" as *; 
+@use "@/styles/fonts";
+@use "sass:color";
+
+
+
+// .button {
+//     @include button(); // Uses primary color by default
+// }
+
+// .button-secondary {
+//     @include button($bg-color: $secondary-color);
+// }
+
+// .button-outline {
+//     padding: $padding;
+//     border: 2px solid $primary-color;
+//     background: transparent;
+//     color: $primary-color;
+//     border-radius: $border-radius;
+//     transition: all 0.3s ease-in-out;
+
+//     &:hover {
+//         background: $primary-color;
+//         color: white;
+//     }
+// }
+
+
+
+
+button:hover, button:focus, [type="submit"]:hover, [type="submit"]:focus, [type="button"]:hover, [type="button"]:focus {
+    background:transparent;
+    color:inherit;
+}

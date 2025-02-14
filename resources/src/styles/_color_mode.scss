@@ -1,0 +1,73 @@
+#btn-toggle-color-mode {
+    height: 3rem;
+    width: auto;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:none !important;
+    margin-left:3rem;
+    margin-right:-0.125rem;
+
+    i {
+        font-size:1.25rem;
+    }
+
+    .light-icon {
+        display: none;
+    }
+
+    .dark-icon {
+        display: flex;
+    }
+
+    // Dark mode styles
+    html.dark & {
+        .light-icon {
+            display: flex !important;
+        }
+
+        .dark-icon {
+            display: none !important;
+        }
+    }
+}
+
+
+
+html {
+    body,
+    #header-top,
+    #header-main,
+    #sub-header-heading-bar,
+    #facet-control-top {
+        @apply bg-white !important;
+        @apply text-stone-100 !important;
+    }
+
+
+    &.dark {
+        body {
+            // Backgrounds
+            @apply bg-stone-900 !important;
+            @apply text-stone-100 !important; // Corrected `color-stone-100` to `text-stone-100`
+
+
+                        // Header elements
+            #header-top,
+            #header-main,
+            #sub-header-heading-bar,
+            #facet-control-top {
+                @apply bg-stone-900 !important;
+                @apply text-stone-100 !important;
+            }
+
+
+            #header-top {
+                @apply bg-stone-800 !important;
+            }
+
+        }
+    }
+}

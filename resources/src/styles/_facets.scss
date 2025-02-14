@@ -1,0 +1,16 @@
+html {
+    body {
+        #facet-control-top {
+            @apply bg-stone-100 text-stone-900 border-b border-stone-500;
+            
+            * {
+                //background:red !important;
+                @apply bg-stone-100 text-stone-900;
+            }
+
+            &.elementor-sticky--effects {
+                top:3rem !important
+            }
+        }
+    }
+}

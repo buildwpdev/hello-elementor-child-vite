@@ -1,0 +1,11 @@
+// web/app/themes/ej-stone-co/resources/src/styles/woocommerce/_listings.scss
+
+html {
+    body {
+        
+        .product-listing-image,
+        img {
+            @apply bg-stone-200 dark:bg-stone-700;
+        }
+    }
+}

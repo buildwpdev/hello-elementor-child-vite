@@ -1,0 +1,11 @@
+/* Make taxonomy edit screen full width */
+
+
+html body #edittag {
+    max-width: 100% !important;
+    width: auto !important;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    /* background:blue; */
+}

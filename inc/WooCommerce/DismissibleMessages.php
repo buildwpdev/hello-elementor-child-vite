@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/WooCommerce/DismissableMessages.php
+// wp-content/themes/build-wp/wp/WooCommerce/DismissableMessages.php
 
-namespace EjStoneCo\WpChildTheme\WooCommerce;
+namespace BuildWp\WpChildTheme\WooCommerce;
 
 class DismissibleMessages {
     /**

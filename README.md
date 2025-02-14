@@ -1,1 +1,1 @@
-# ej-stone-co
+# build-wp

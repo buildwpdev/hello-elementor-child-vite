@@ -1,10 +1,10 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/CustomPostTypes/NestedElementorContentBlock.php
+// wp-content/themes/build-wp/wp/CustomPostTypes/NestedElementorContentBlock.php
 
-namespace EjStoneCo\WpChildTheme\CustomPostTypes;
+namespace BuildWp\WpChildTheme\CustomPostTypes;
 
-use EjStoneCo\WpChildTheme\Helpers\Registerable;
+use BuildWp\WpChildTheme\Helpers\Registerable;
 
 class NestedElementorContentBlock implements Registerable {
     public function register(): void {

@@ -2,7 +2,7 @@
 
 // 
 
-namespace EjStoneCo\WpChildTheme;
+namespace BuildWp\WpChildTheme;
 
 class Hooks {
     public static function register() {

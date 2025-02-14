@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Elementor/TemplateConditions/RegisterConditions.php
+// wp-content/themes/build-wp/wp/Elementor/TemplateConditions/RegisterConditions.php
 
-namespace EjStoneCo\WpChildTheme\Elementor\TemplateConditions;
+namespace BuildWp\WpChildTheme\Elementor\TemplateConditions;
 
 if (!defined('ABSPATH')) {
     exit; // Prevent direct access

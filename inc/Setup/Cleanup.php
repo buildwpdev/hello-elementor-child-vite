@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Setup/Cleanup.php
+// wp-content/themes/build-wp/wp/Setup/Cleanup.php
 
-namespace EjStoneCo\WpChildTheme\Setup;
+namespace BuildWp\WpChildTheme\Setup;
 
 class Cleanup {
     public static function register() {

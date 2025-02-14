@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Elementor/Widgets/oembed-widget.php
+// wp-content/themes/build-wp/wp/Elementor/Widgets/oembed-widget.php
 
-namespace EjStoneCo\WpChildTheme\Elementor\Widgets;
+namespace BuildWp\WpChildTheme\Elementor\Widgets;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.

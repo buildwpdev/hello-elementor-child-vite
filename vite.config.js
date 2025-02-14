@@ -1,17 +1,35 @@
-// wp-content/themes/ej-stone-co/vite.config.js
+// wp-content/themes/build-wp/vite.config.js
 
+import UnoCSS from 'unocss/vite'
+import liveReload from 'vite-plugin-live-reload'
+import fullReload from 'vite-plugin-full-reload'
 import { defineConfig } from "vite";
 import path from "path";
 import webfontDownload from "vite-plugin-webfont-dl";
 
 export default defineConfig({
     plugins: [
-        webfontDownload({
-            fonts: [
-                "https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700&family=Fira+Sans:wght@400;600;700&display=swap",
-            ],
-            outputDir: "resources/src/assets/fonts", // ✅ Ensure fonts are placed here
-        }),
+        // webfontDownload({
+        //     fonts: [
+        //         "https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700&family=Fira+Sans:wght@400;600;700&display=swap",
+        //     ],
+        //     outputDir: "resources/src/assets/fonts", // ✅ Ensure fonts are placed here
+        // }),
+        UnoCSS(),
+
+        // Live reload for PHP files (refreshes the browser)
+        liveReload([
+            __dirname + '/**/*.php', // Watches all PHP files in the theme
+        ]),
+
+        // Ensures a FULL page reload when PHP changes
+        fullReload([
+            'inc/**/*.php',   // Watches included PHP files
+            'templates/**/*.php', // Watches custom templates
+            '*.php',          // Watches root PHP files
+        ])
+
+
     ],
     root: "resources",
     resolve: {
@@ -19,7 +37,7 @@ export default defineConfig({
             "@": path.resolve(__dirname, "resources/src"),
         },
     },
-    publicDir: "resources/src/assets", // ✅ Ensures fonts are copied to dist/
+    publicDir: "resources/public",
     css: {
         //postcss: "./postcss.config.js",
         preprocessorOptions: {

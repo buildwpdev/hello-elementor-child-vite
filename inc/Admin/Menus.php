@@ -1,10 +1,10 @@
 <?php
 
-// web/app/themes/ej-stone-co/wp/Admin/Menus.php
+// web/app/themes/build-wp/wp/Admin/Menus.php
 
-namespace EjStoneCo\WpChildTheme\Admin;
+namespace BuildWp\WpChildTheme\Admin;
 
-use EjStoneCo\WpChildTheme\Helpers\Registerable;
+use BuildWp\WpChildTheme\Helpers\Registerable;
 
 class Menus implements Registerable {
     public function register(): void {

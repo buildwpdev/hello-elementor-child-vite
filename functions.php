@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use EjStoneCo\WpChildTheme\Init;
+use BuildWp\WpChildTheme\Init;
 
 // Initialize all the theme services
 add_action('after_setup_theme', function () {

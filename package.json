@@ -9,13 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@unocss/vite": "^65.4.3",
+    "autoprefixer": "^10.4.20",
+    "lucide-svelte": "^0.475.0",
+    "postcss": "^8.5.1",
     "sass": "^1.83.4",
+    "unocss": "^65.4.3",
     "vite": "^6.0.5",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-live-reload": "^3.0.4",
     "vite-plugin-webfont-dl": "^3.10.4"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.11.3",
-    "flowbite": "^3.1.1",
-    "laravel-vite-plugin": "^1.2.0"
+    "flowbite": "^3.1.1"
   }
 }

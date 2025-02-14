@@ -1,10 +1,10 @@
 <?php
 
-// wp-content/themes/ej-stone-co/src/CustomPostTypes/Video.php
+// wp-content/themes/build-wp/src/CustomPostTypes/Video.php
 
-namespace EjStoneCo\WpChildTheme\CustomPostTypes;
+namespace BuildWp\WpChildTheme\CustomPostTypes;
 
-use EjStoneCo\WpChildTheme\Helpers\Registerable;
+use BuildWp\WpChildTheme\Helpers\Registerable;
 
 class Video implements Registerable {
     public function register(): void {

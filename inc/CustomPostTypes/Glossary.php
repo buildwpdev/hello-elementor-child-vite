@@ -1,10 +1,10 @@
 <?php
 
-// wp-content/themes/ej-stone-co/src/CustomPostTypes/Glossary.php
+// wp-content/themes/build-wp/src/CustomPostTypes/Glossary.php
 
-namespace EjStoneCo\WpChildTheme\CustomPostTypes;
+namespace BuildWp\WpChildTheme\CustomPostTypes;
 
-use EjStoneCo\WpChildTheme\Helpers\Registerable;
+use BuildWp\WpChildTheme\Helpers\Registerable;
 
 class Glossary implements Registerable {
     public function register(): void {

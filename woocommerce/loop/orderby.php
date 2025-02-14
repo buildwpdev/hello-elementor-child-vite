@@ -1,6 +1,6 @@
 <?php
 
-// wp-content/themes/ej-stone-co/woocommerce/loop/orderby.php
+// wp-content/themes/build-wp/woocommerce/loop/orderby.php
 
 $catalog_orderby_options = apply_filters('woocommerce_catalog_orderby', array(
     'menu_order' => __( 'Default sorting', 'woocommerce' ),

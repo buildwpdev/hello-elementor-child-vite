@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'EjStoneCo\\WpChildTheme\\' => array($baseDir . '/inc'),
+    'BuildWp\\WpChildTheme\\' => array($baseDir . '/inc'),
 );

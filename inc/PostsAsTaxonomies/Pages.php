@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/PostsAsTaxonomies/Pages.php
+// wp-content/themes/build-wp/wp/PostsAsTaxonomies/Pages.php
 
-namespace EjStoneCo\WpChildTheme\PostsAsTaxonomies;
+namespace BuildWp\WpChildTheme\PostsAsTaxonomies;
 
 class Pages {
     public function register() {
@@ -15,7 +15,7 @@ class Pages {
      */
     public function register_pages_taxonomy() {
         $args = [
-            'label' => __('Page Categories', 'ej-stone-co'),
+            'label' => __('Page Categories', 'build-wp'),
             'rewrite' => ['slug' => 'page-category'],
             'hierarchical' => true, // Enables parent-child structure
             'show_admin_column' => true, // Show taxonomy in the post edit screen

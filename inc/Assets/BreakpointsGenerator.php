@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Assets/BreakpointsGenerator.php
+// wp-content/themes/build-wp/wp/Assets/BreakpointsGenerator.php
 
-namespace EjStoneCo\WpChildTheme\Assets;
+namespace BuildWp\WpChildTheme\Assets;
 
 class BreakpointsGenerator {
     /**

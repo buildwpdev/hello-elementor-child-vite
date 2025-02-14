@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/src/Helpers/Registerable.php
+// wp-content/themes/build-wp/src/Helpers/Registerable.php
 
-namespace EjStoneCo\WpChildTheme\Helpers;
+namespace BuildWp\WpChildTheme\Helpers;
 
 interface Registerable {
     public function register(): void;

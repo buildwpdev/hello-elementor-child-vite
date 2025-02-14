@@ -1,4 +1,4 @@
-// wp-content/themes/ej-stone-co/resources/src/main.js
+// wp-content/themes/build-wp/resources/src/main.js
 
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 

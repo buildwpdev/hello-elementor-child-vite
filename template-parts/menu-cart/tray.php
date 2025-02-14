@@ -1,6 +1,6 @@
 <?php
 
-// wp-content/themes/ej-stone-co/template-parts/menu-cart/tray.php
+// wp-content/themes/build-wp/template-parts/menu-cart/tray.php
 
 $cart_count = $args['cart_count'] ?? null;
 $cart_subtotal = $args['cart_subtotal'] ?? null;

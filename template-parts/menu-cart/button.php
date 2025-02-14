@@ -1,6 +1,6 @@
 <?php
 
-// wp-content/themes/ej-stone-co/template-parts/menu-cart/button.php
+// wp-content/themes/build-wp/template-parts/menu-cart/button.php
 
 $cart_count = $args['cart_count'] ?? null;
 

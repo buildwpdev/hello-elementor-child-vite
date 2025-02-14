@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Assets/Vite.php
+// wp-content/themes/build-wp/wp/Assets/Vite.php
 
-namespace EjStoneCo\WpChildTheme\Assets;
+namespace BuildWp\WpChildTheme\Assets;
 
 class Vite {
     protected static $manifest = null;

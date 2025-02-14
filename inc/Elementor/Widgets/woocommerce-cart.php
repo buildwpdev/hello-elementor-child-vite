@@ -1,6 +1,6 @@
 <?php
 
-namespace EjStoneCo\WpChildTheme\Elementor\Widgets;
+namespace BuildWp\WpChildTheme\Elementor\Widgets;
 
 use ElementorPro\Modules\Woocommerce\Widgets\Menu_Cart;
 use ElementorPro\Modules\Woocommerce\Module;
@@ -118,7 +118,7 @@ class WooCommerce_Menu_Cart extends Menu_Cart {
                                     <?php else:?>
                                         <?php
 
-                                        // wp-content/themes/ej-stone-co/template-parts/utilities/spinner.php
+                                        // wp-content/themes/build-wp/template-parts/utilities/spinner.php
 
                                         $height = $args['height'] ?? 12;
                                         $width = $args['width'] ?? 12;

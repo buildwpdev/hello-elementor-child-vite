@@ -1,10 +1,10 @@
 {
-    "name": "ej-stone-co/wp-child-theme",
-    "description": "EJ Stone Co's chilld WordPress theme (based off of \"hello-elementor\")",
+    "name": "build-wp/wp-child-theme",
+    "description": "Build WP's child WordPress theme (based off of \"hello-elementor\")",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "EjStoneCo\\WpChildTheme\\": "inc/"
+            "BuildWp\\WpChildTheme\\": "inc/"
         }
     },
     "authors": [

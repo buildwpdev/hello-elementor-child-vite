@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/src/Init.php
+// wp-content/themes/build-wp/src/Init.php
 
-namespace EjStoneCo\WpChildTheme;
+namespace BuildWp\WpChildTheme;
 
 
 class Init {

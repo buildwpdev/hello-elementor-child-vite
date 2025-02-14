@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/FacetWP/SearchSync.php
+// wp-content/themes/build-wp/wp/FacetWP/SearchSync.php
 
-namespace EjStoneCo\WpChildTheme\InformationRetrieval\AdvancedWooSearch;
+namespace BuildWp\WpChildTheme\InformationRetrieval\AdvancedWooSearch;
 
 class AdvancedWooSearch {
 

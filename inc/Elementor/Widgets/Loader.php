@@ -1,12 +1,12 @@
 <?php
 
-namespace EjStoneCo\WpChildTheme\Elementor\Widgets;
+namespace BuildWp\WpChildTheme\Elementor\Widgets;
 
 use Elementor\Widgets_Manager;
 use Elementor\Elements_Manager; // Needed to register widget categories
 
 class Loader {
-    private static string $base_namespace = 'EjStoneCo\WpChildTheme\Elementor\Widgets';
+    private static string $base_namespace = 'BuildWp\WpChildTheme\Elementor\Widgets';
     private static ?array $widgets = null; // ✅ Store widget list statically
 
     public function register(): void {

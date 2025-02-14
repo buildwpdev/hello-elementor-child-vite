@@ -1,10 +1,10 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Assets/Enqueue.php
+// wp-content/themes/build-wp/wp/Assets/Enqueue.php
 
-namespace EjStoneCo\WpChildTheme\Assets;
+namespace BuildWp\WpChildTheme\Assets;
 
-use EjStoneCo\WpChildTheme\Assets\Vite;
+use BuildWp\WpChildTheme\Assets\Vite;
 
 class Enqueue {
     public static function register() {
@@ -48,7 +48,7 @@ class Enqueue {
      */
     public static function enqueue_admin_assets() {
         wp_enqueue_style(
-            'build-wp-admin-css',
+            'BuildWp-admin-css',
             get_theme_file_uri('/resources/admin-style.css'), // ✅ Correct path
             [],
             null

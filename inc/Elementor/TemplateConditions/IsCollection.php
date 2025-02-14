@@ -1,6 +1,6 @@
 <?php
 
-namespace EjStoneCo\WpChildTheme\Elementor\TemplateConditions;
+namespace BuildWp\WpChildTheme\Elementor\TemplateConditions;
 
 use ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base;
 
@@ -23,7 +23,7 @@ class IsCollection extends Condition_Base {
     }
 
     public function get_label() {
-        return __('Is Collection', 'ej-stone-co');
+        return __('Is Collection', 'build-wp');
     }
 
     public function check($args) {

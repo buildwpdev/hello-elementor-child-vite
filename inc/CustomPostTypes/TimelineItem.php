@@ -1,10 +1,10 @@
 <?php
 
-// wp-content/themes/ej-stone-co/src/CustomPostTypes/TimelineItem.php
+// wp-content/themes/build-wp/src/CustomPostTypes/TimelineItem.php
 
-namespace EjStoneCo\WpChildTheme\CustomPostTypes;
+namespace BuildWp\WpChildTheme\CustomPostTypes;
 
-use EjStoneCo\WpChildTheme\Helpers\Registerable;
+use BuildWp\WpChildTheme\Helpers\Registerable;
 
 class TimelineItem implements Registerable {
     public function register(): void {

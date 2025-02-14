@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Elementor/Modules/WooCommerceCartOverride.php
+// wp-content/themes/build-wp/wp/Elementor/Modules/WooCommerceCartOverride.php
 
-namespace EjStoneCo\WpChildTheme\Elementor\Modules;
+namespace BuildWp\WpChildTheme\Elementor\Modules;
 
 
 

@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Shortcodes/Shortcodes.php
+// wp-content/themes/build-wp/wp/Shortcodes/Shortcodes.php
 
-namespace EjStoneCo\WpChildTheme\Shortcodes;
+namespace BuildWp\WpChildTheme\Shortcodes;
 
 use Elementor\TemplateLibrary\Source_Local;
 use ElementorPro\Plugin;

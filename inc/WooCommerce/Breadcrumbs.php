@@ -1,6 +1,6 @@
 <?php
 
-namespace EjStoneCo\WpChildTheme\WooCommerce;
+namespace BuildWp\WpChildTheme\WooCommerce;
 
 class Breadcrumbs {
     /**

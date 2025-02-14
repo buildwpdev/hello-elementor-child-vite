@@ -1,8 +1,8 @@
 <?php
 
-// wp-content/themes/ej-stone-co/wp/Elementor/Widgets/oembed-widget.php
+// wp-content/themes/build-wp/wp/Elementor/Widgets/oembed-widget.php
 
-namespace EjStoneCo\WpChildTheme\Elementor\Widgets;
+namespace BuildWp\WpChildTheme\Elementor\Widgets;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
@@ -15,7 +15,7 @@ class Search_Query extends \Elementor\Widget_Base {
      * 
      */
     public function get_name(): string {
-        return __('Search Query', 'ej-stone-co-theme');
+        return __('Search Query', 'build-wp-theme');
     }
 
 
@@ -50,7 +50,7 @@ class Search_Query extends \Elementor\Widget_Base {
         // $this->start_controls_section(
         //     'content_section',
         //     [
-        //         'label' => __('Content', 'ej-stone-co-theme'),
+        //         'label' => __('Content', 'build-wp-theme'),
         //         'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
         //     ]
         // );
@@ -58,29 +58,29 @@ class Search_Query extends \Elementor\Widget_Base {
         // $this->add_control(
         //     'button_id',
         //     [
-        //         'label' => __('Button ID', 'ej-stone-co-theme'),
+        //         'label' => __('Button ID', 'build-wp-theme'),
         //         'type' => \Elementor\Controls_Manager::TEXT,
         //         'default' => '',
-        //         'description' => __('Set a unique ID for the button (optional).', 'ej-stone-co-theme'),
+        //         'description' => __('Set a unique ID for the button (optional).', 'build-wp-theme'),
         //     ]
         // );
 
         // $this->add_control(
         //     'button_text',
         //     [
-        //         'label' => __('Button Text', 'ej-stone-co-theme'),
+        //         'label' => __('Button Text', 'build-wp-theme'),
         //         'type' => \Elementor\Controls_Manager::TEXT,
-        //         'default' => __('Toggle', 'ej-stone-co-theme'),
+        //         'default' => __('Toggle', 'build-wp-theme'),
         //     ]
         // );
 
         // $this->add_control(
         //     'toggle_state',
         //     [
-        //         'label' => __('Default State', 'ej-stone-co-theme'),
+        //         'label' => __('Default State', 'build-wp-theme'),
         //         'type' => \Elementor\Controls_Manager::SWITCHER,
-        //         'label_on' => __('On', 'ej-stone-co-theme'),
-        //         'label_off' => __('Off', 'ej-stone-co-theme'),
+        //         'label_on' => __('On', 'build-wp-theme'),
+        //         'label_off' => __('Off', 'build-wp-theme'),
         //         'return_value' => 'on',
         //         'default' => 'off',
         //     ]
@@ -89,10 +89,10 @@ class Search_Query extends \Elementor\Widget_Base {
         // $this->add_control(
         //     'data_action',
         //     [
-        //         'label' => __('Data Action Attribute', 'ej-stone-co-theme'),
+        //         'label' => __('Data Action Attribute', 'build-wp-theme'),
         //         'type' => \Elementor\Controls_Manager::TEXT,
         //         'default' => '',
-        //         'description' => __('Specify a data-action attribute value.', 'ej-stone-co-theme'),
+        //         'description' => __('Specify a data-action attribute value.', 'build-wp-theme'),
         //     ]
         // );
 
@@ -109,10 +109,10 @@ class Search_Query extends \Elementor\Widget_Base {
         ?>
         <div class="flex search-query-widget">
             <?php if (!empty($search_query)) : ?>
-                <label><?php echo esc_html__('Search results for:', 'ej-stone-co-theme');?></label>
+                <label><?php echo esc_html__('Search results for:', 'build-wp-theme');?></label>
                 <em>"<?php echo esc_html($search_query); ?>"</em>
             <?php else : ?>
-                <p><?php echo esc_html__('No search query provided.', 'ej-stone-co-theme'); ?></p>
+                <p><?php echo esc_html__('No search query provided.', 'build-wp-theme'); ?></p>
             <?php endif; ?>
         </div>
         <?php

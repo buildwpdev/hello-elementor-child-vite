@@ -41,7 +41,7 @@ class Loader {
     }
 
     public static function load_widget_files(): void {
-        $base_path = get_stylesheet_directory() . '/wp/Elementor/Widgets/';
+        $base_path = get_stylesheet_directory() . '/inc/Elementor/Widgets/';
 
         foreach (self::get_widget_classes() as $class => $file) {
             $file_path = $base_path . $file;
@@ -75,6 +75,10 @@ class Loader {
                 'OEmbed_Widget' => 'oembed-widget.php',
                 'WooCommerce_Menu_Cart' => 'woocommerce-cart.php',
                 'Search_Query' => 'search-query.php',
+                //
+                'SvgImage' => 'SvgImage.php',
+                'ColorModeToggle' => 'ColorModeToggle.php',
+
             ];
     
             // ✅ Automatically prepend `self::$base_namespace`

@@ -1,0 +1,170 @@
+#btn-toggle-color-mode {
+    height: 3rem;
+    width: auto;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:none !important;
+    margin-left:3rem;
+    margin-right:-0.125rem;
+
+    &,&:hover {
+        background:transparent !important;
+    }
+
+    i {
+        font-size:1.25rem;
+    }
+
+    .light-icon {
+        display: none;
+    }
+
+    .dark-icon {
+        display: flex;
+    }
+
+    // Dark mode styles
+    html.dark & {
+        .light-icon {
+            display: flex !important;
+        }
+
+        .dark-icon {
+            display: none !important;
+        }
+    }
+}
+
+
+
+html {
+    body,
+    #header-top,
+    #header-main,
+    #sub-header-heading-bar,
+    #facet-control-top {
+        @apply bg-white !important;
+        @apply text-stone-100 !important;
+    }
+
+
+    &.dark {
+        body {
+            // Backgrounds
+            @apply bg-stone-900 !important;
+            @apply text-stone-100 !important; // Corrected `color-stone-100` to `text-stone-100`
+
+
+                        // Header elements
+            #header-top,
+            #header-main,
+            #sub-header-heading-bar,
+            #facet-control-top {
+                @apply bg-stone-900 !important;
+                @apply text-stone-100 !important;
+            }
+
+
+            #header-top {
+                @apply bg-stone-800 !important;
+            }
+
+        }
+    }
+}
+
+
+@layer components {
+    html {
+        body {
+            &,
+            .bg-color-mode {
+                @apply bg-stone-50;
+            }
+
+            .bg-color-mode-1 {
+                @apply bg-stone-100;
+            }
+
+            &,
+            .text-color-mode {
+                @apply text-stone-950;
+            }
+
+            .text-color-mode-1 {
+                @apply text-stone-800;
+            }
+
+            .svg-color-mode {
+
+                &,
+                svg {
+                    @apply fill-stone-950 stroke-stone-950;
+                    fill: theme('colors.stone.950') !important;
+                    stroke: theme('colors.stone.950') !important;
+                }
+
+            }
+
+            .svg-color-mode-1 {
+
+                &,
+                svg {
+                    @apply fill-stone-800 stroke-stone-800;
+                    fill: theme('colors.stone.800') !important;
+                    stroke: theme('colors.stone.800') !important;   
+                }
+
+            }
+        }
+
+        &.dark {
+            &,
+            .bg-color-mode {
+                @apply bg-stone-900;
+            }
+
+            .bg-color-mode-1 {
+                @apply bg-stone-800;
+            }
+
+            &,
+            .text-color-mode {
+                @apply text-stone-50;
+            }
+
+            .text-color-mode-1 {
+                @apply text-stone-200;
+            }
+
+            .svg-color-mode {
+
+                &,
+                svg {
+                    @apply fill-stone-50 stroke-stone-50;
+                    fill: theme('colors.stone.50') !important;
+                    stroke: theme('colors.stone.50') !important;
+                }
+
+            }
+            
+            .svg-color-mode-1 {
+
+                &,
+                svg {
+                    @apply fill-stone-200 stroke-stone-200;
+                    fill: theme('colors.stone.200') !important;
+                    stroke: theme('colors.stone.200') !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+

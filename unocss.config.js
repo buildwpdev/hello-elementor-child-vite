@@ -1,11 +1,12 @@
 // unocss.config.js
 
-import { defineConfig, presetUno, presetIcons } from 'unocss'
+// import { defineConfig, presetUno, presetIcons } from 'unocss'
+import presetMini from '@unocss/preset-mini'
+import { defineConfig } from 'unocss'
 
 export default defineConfig({
     presets: [
-        presetUno(),
-        presetIcons({ scale: 1.2 })
+        presetMini(),
     ],
     scan: {
         dirs: ['.'], // Scan all files in the theme directory

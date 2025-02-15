@@ -1,7 +1,5 @@
 // wp-content/themes/build-wp/resources/src/styles/_variables.scss
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
-
 // Colors
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
@@ -9,7 +7,7 @@ $text-color: #333;
 $background-color: #f8f9fa;
 
 // Typography
-$font-stack: 'Fira Sans', sans-serif; // Updated to Fira Sans
+$font-stack: 'Arial', sans-serif;
 
 // Spacing & Borders
 $border-radius: 4px;
@@ -33,6 +31,7 @@ $gradient-midnight-cocoa: linear-gradient(135deg, #2A1B15, #4A3328);
 $gradient-mystic-obsidian: linear-gradient(135deg, #3B206B, #512D82);
 
 // Typography
+$font-stack: 'Playfair Display', serif; // Luxurious serif font
 
 // Spacing & Borders
 $border-radius: 6px;

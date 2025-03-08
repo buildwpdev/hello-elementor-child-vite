@@ -6,6 +6,12 @@ namespace BuildWp\WpChildTheme\Setup;
 
 class Cleanup {
     public static function register() {
+
+        // Only run Cleanup on the front-end and NOT in Elementor
+        if (is_admin() || self::is_elementor_editor()) {
+            return;
+        }
+
         // Core Cleanup & Optimizations
         add_action('init', [self::class, 'init_cleanup']);
         add_action('pre_ping', [self::class, 'disable_self_pingbacks']);
@@ -17,7 +23,7 @@ class Cleanup {
         // Security Hardening
         add_filter('login_errors', '__return_false');
         add_filter('the_generator', '__return_empty_string');
-        add_filter('rest_authentication_errors', [self::class, 'disable_rest_api_for_guests']);
+        //add_filter('rest_authentication_errors', [self::class, 'disable_rest_api_for_guests']);
         add_action('wp_head', [self::class, 'remove_unwanted_meta'], 1);
         add_action('template_redirect', [self::class, 'disable_feeds'], 1);
         add_action('init', [self::class, 'disable_emojis']);
@@ -37,6 +43,14 @@ class Cleanup {
 
 
 
+    }
+
+
+    /**
+     * Detect if Elementor editor is currently active.
+     */
+    private static function is_elementor_editor() {
+        return defined('ELEMENTOR_VERSION') && isset($_GET['elementor-preview']);
     }
 
     public static function init_cleanup() {

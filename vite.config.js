@@ -1,35 +1,24 @@
 // wp-content/themes/build-wp/vite.config.js
 
-import UnoCSS from 'unocss/vite'
-import liveReload from 'vite-plugin-live-reload'
-import fullReload from 'vite-plugin-full-reload'
+import liveReload from 'vite-plugin-live-reload';
+import fullReload from 'vite-plugin-full-reload';
 import { defineConfig } from "vite";
 import path from "path";
-import webfontDownload from "vite-plugin-webfont-dl";
+import webfontDownload from 'vite-plugin-webfont-dl';
 
 export default defineConfig({
     plugins: [
-        // webfontDownload({
-        //     fonts: [
-        //         "https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700&family=Fira+Sans:wght@400;600;700&display=swap",
-        //     ],
-        //     outputDir: "resources/src/assets/fonts", // ✅ Ensure fonts are placed here
-        // }),
-        UnoCSS(),
-
-        // Live reload for PHP files (refreshes the browser)
-        liveReload([
-            __dirname + '/**/*.php', // Watches all PHP files in the theme
-        ]),
-
-        // Ensures a FULL page reload when PHP changes
-        fullReload([
-            'inc/**/*.php',   // Watches included PHP files
-            'templates/**/*.php', // Watches custom templates
-            '*.php',          // Watches root PHP files
-        ])
-
-
+        webfontDownload([
+            'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100..900&display=swap',
+            'https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'
+        ], {
+            injectAsStyleTag: false,
+            minifyCss: true,
+            embedFonts: false,
+            assetsSubfolder: "fonts",
+        }),
+        liveReload([__dirname + '/**/*.php']),
+        fullReload(['inc/**/*.php', 'templates/**/*.php', '*.php']),
     ],
     root: "resources",
     resolve: {
@@ -39,19 +28,6 @@ export default defineConfig({
         },
     },
     publicDir: "resources/public",
-    css: {
-        //postcss: "./postcss.config.js",
-        preprocessorOptions: {
-            scss: {
-                additionalData: `
-                    @use "sass:color";
-                    @use "@/styles/variables" as *;
-                    @use "@/styles/breakpoints" as *;
-                    @use "@/styles/mixins" as *;
-                `,
-            },
-        },
-    },
     build: {
         outDir: "dist",
         emptyOutDir: true,

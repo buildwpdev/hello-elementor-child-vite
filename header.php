@@ -22,8 +22,11 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
+FART
 <body <?php body_class(); ?>>
+
 <?php wp_body_open(); ?>
+
 <?php if ( $enable_skip_link ) { ?>
 <a class="skip-link screen-reader-text" href="<?php echo esc_url( $skip_link_url ); ?>"><?php echo esc_html__( 'Skip to content', 'hello-elementor' ); ?></a>
 <?php } ?>

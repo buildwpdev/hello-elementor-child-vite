@@ -10,7 +10,7 @@ class Init {
         $services = [
 
             // Cleanup
-            //Setup\Cleanup::class, // <-- ADDED THIS
+            Setup\Cleanup::class, // <-- ADDED THIS
 
             // Theming
             Assets\Enqueue::class, 

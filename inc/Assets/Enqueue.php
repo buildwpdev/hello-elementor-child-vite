@@ -23,13 +23,13 @@ class Enqueue {
 
         //self::log_enqueued_items();
 
-        // Enqueue Styles
-        wp_enqueue_style(
-            'hello-child-style',
-            get_stylesheet_directory_uri() . '/assets/css/style.css',
-            ['hello-elementor-theme-style'],
-            HELLO_ELEMENTOR_CHILD_VERSION
-        );
+        // // Enqueue Styles
+        // wp_enqueue_style(
+        //     'hello-child-style',
+        //     get_stylesheet_directory_uri() . '/assets/css/style.css',
+        //     ['hello-elementor-theme-style'],
+        //     HELLO_ELEMENTOR_CHILD_VERSION
+        // );
 
         //wp_enqueue_script('alpine-js', 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js', [], null, true);
 
@@ -168,6 +168,14 @@ class Enqueue {
                     );
                 }
             }
+
+            // ✅ Enqueue webfonts.css if it exists in the manifest
+            if (isset($manifest['assets/webfonts.css']['file'])) {
+                $webfontsCssFile = get_theme_file_uri('resources/dist/' . $manifest['assets/webfonts.css']['file']);
+                wp_enqueue_style('vite-webfonts', $webfontsCssFile, [], null);
+            }
+
+
         }
     }
 

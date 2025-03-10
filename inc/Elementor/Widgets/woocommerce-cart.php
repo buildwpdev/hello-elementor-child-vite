@@ -11,6 +11,11 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
+// Ensure Elementor Pro and the required WooCommerce class are loaded
+if (!class_exists('ElementorPro\Modules\Woocommerce\Widgets\Menu_Cart')) {
+    return;
+}
+
 class WooCommerce_Menu_Cart extends Menu_Cart {
 
     public function get_name(): string {

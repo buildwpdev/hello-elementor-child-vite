@@ -184,3 +184,10 @@ function apply_elementor_custom_query_to_product_loop( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'apply_elementor_custom_query_to_product_loop', 99 );
+
+
+
+add_action('wp_footer', function () {
+    echo '<p style="text-align: center; font-weight: bold; color: white; background: #c1f;">Testing shit!</p>';
+});
+
